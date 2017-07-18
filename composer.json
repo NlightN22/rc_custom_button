@@ -1,11 +1,11 @@
 {
     "name": "san4op/cloud_button",
     "type": "roundcube-plugin",
-    "description": "Plugin to add button to open cloud storage.",
-    "keywords": ["button","cloud"],
+    "description": "Plugin to add button in taskbar to open cloud storage.",
+    "keywords": ["button","cloud","taskbar"],
     "homepage": "https://github.com/san4op/roundcube_cloud_button",
-    "license": "GPL-3.0+",
-    "version": "0.1",
+    "license": "GPL-3.0",
+    "version": "1.0",
     "authors": [
         {
             "name": "Alexander Pushkin",

@@ -1,14 +1,13 @@
 <?php
 /**
- * Cloud Button
+ * Roundcube Plugin Cloud Button
+ * Plugin to add button in taskbar to open cloud storage.
  *
- * Plugin to add button to open cloud storage.
- *
- * @date 2017-03-14
- * @version 0.1
- * @author Alexander Pushkin
- * @url https://github.com/san4op/roundcube_cloud_button
- * @licence GNU GPLv3
+ * @version 1.0
+ * @author Alexander Pushkin <san4op@icloud.com>
+ * @copyright Copyright (c) 2017, Alexander Pushkin
+ * @link https://github.com/san4op/roundcube_cloud_button
+ * @license GNU General Public License, version 3
  */
 
 class cloud_button extends rcube_plugin
@@ -20,25 +19,26 @@ class cloud_button extends rcube_plugin
 	{
 		$rcmail = rcube::get_instance();
 
-		$this->title = $rcmail->config->get('cloud_button_title', 'cloud_button.cloud');
+		$this->title = $rcmail->config->get('cloud_button_title', '');
 		$this->url = $rcmail->config->get('cloud_button_url', '');
 
 		if (!$this->url) {
 			return;
 		}
 
-		$this->add_texts('localization/', true);
 		$this->include_stylesheet($this->local_skin_path() . '/cloud_button.css');
+		$this->add_texts('localization/', true);
+		$this->load_config();
 
 		$this->add_button(array(
-			'href' => $this->url,
-			'class'   => 'button-cloud',
-			'classsel' => 'button-cloud button-selected',
-			'innerclass' => 'button-inner',
-			'label'   => $this->title,
+			'label'      => ($this->title != '' ? $this->title : 'cloud_button.cloud'),
+			'href'       => $this->url,
+			'target'     => '_blank',
+			'class'      => 'button-cloud',
+			'classsel'   => 'button-cloud button-selected',
+			'innerclass' => 'button-inner'
 		), 'taskbar');
 	}
-
 }
 
 ?>
