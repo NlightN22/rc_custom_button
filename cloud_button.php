@@ -3,9 +3,9 @@
  * Roundcube Plugin Cloud Button
  * Plugin to add button in taskbar to open cloud storage.
  *
- * @version 1.0.1
+ * @version 1.0.2
  * @author Alexander Pushkin <san4op@icloud.com>
- * @copyright Copyright (c) 2017, Alexander Pushkin
+ * @copyright Copyright (c) 2019, Alexander Pushkin
  * @link https://github.com/san4op/roundcube_cloud_button
  * @license GNU General Public License, version 3
  */
@@ -27,6 +27,7 @@ class cloud_button extends rcube_plugin
 		$this->add_texts('localization/');
 
 		$this->add_button(array(
+			'type'       => 'link',
 			'label'      => 'cloud_button.cloud',
 			'href'       => $this->url,
 			'target'     => '_blank',
