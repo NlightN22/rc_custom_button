@@ -1,11 +1,9 @@
-Cloud Button (Roundcube Webmail Plugin)
-=======================================
-Plugin to add button in taskbar to open cloud storage.
+# Cloud Button (Roundcube Webmail Plugin)
 
-Configuration
--------------
-Rename config.inc.php.dist to config.inc.php and edit it.
+Plugin to add button in taskbar to open custom link.
 
-Donate
-------
-You can make a donation [here](http://yasobe.ru/na/roundcube_cloud_button), this will help motivate me to continue my work.
+## Configuration
+
+Edit config.inc.php
+
+#### Fork from https://github.com/san4op/roundcube_cloud_button
