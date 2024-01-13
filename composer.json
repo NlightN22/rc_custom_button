@@ -1,16 +1,16 @@
 {
-    "name": "san4op/cloud_button",
+    "name": "nlightn22/rc_custom_button",
     "type": "roundcube-plugin",
-    "description": "Plugin to add button in taskbar to open cloud storage.",
-    "keywords": ["button","cloud","taskbar"],
-    "homepage": "https://github.com/san4op/roundcube_cloud_button",
-    "license": "GPL-3.0",
-    "version": "1.0.2",
+    "description": "Plugin to add button in taskbar to open custom url.",
+    "keywords": ["button","custom","taskbar"],
+    "homepage": "https://github.com/san4op/roundcube_custom_button",
+    "license": "MIT",
+    "version": "1.0.0",
     "authors": [
         {
-            "name": "Alexander Pushkin",
-            "email": "san4op@icloud.com",
-            "homepage": "https://github.com/san4op",
+            "name": "NlightN22",
+            "email": "oncharterliz@gmail.com",
+            "homepage": "https://github.com/NlightN22/rc_custom_button",
             "role": "Developer"
         }
     ],

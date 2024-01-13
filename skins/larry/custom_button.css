@@ -1,0 +1,7 @@
+#taskbar a.button-custom span.button-inner {
+	background: url(images/custom.png) 0 2px no-repeat;
+}
+#taskbar a.button-custom:hover span.button-inner,
+#taskbar a.button-custom.button-selected span.button-inner {
+	background-position: 0 -20px;
+}
