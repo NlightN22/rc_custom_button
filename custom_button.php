@@ -3,6 +3,8 @@
 class custom_button extends rcube_plugin
 {
 	private $url;
+	private $target;
+	private $label;
 
 	function init()
 	{
